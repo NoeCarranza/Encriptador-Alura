@@ -3,15 +3,21 @@ body {
     margin: 0;
     Padding: 0;
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    
+}
+p{
+    margin: 0;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
-main{
-    margin-top: 3rem;
-}
 
 .logo-alura {
-    display: flex;
-    flex-direction: column;
+
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
@@ -24,11 +30,10 @@ main{
 }
 
 .texto-a-encriptar {
-    position: absolute;
-    width: 60%;
-    height: 85%;
-    left: 9%;
-    top: 20%;
+    height: 80%;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 120px;
     background-color: #E5E5E5;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
@@ -66,50 +71,38 @@ main{
 
 .cuadro-respuesta {
 
-    position: absolute;
-    width: 25%;
-    height: 110%;
-    left: 72.5%;
-    top: 2rem;
+    display: grid;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    margin: 0%;
+    margin: 40px;
+    height: 107%;
+    width: 80%;
     border-color: #FFFFFF;
 
 
 }
 
 .dibujo-nene {
-
-    margin-top: 40%;
-    margin-left: 4%;
+    margin-top:40%;
+    padding: 20px;
     width: 35%;
     height: 35%;
-    left: 105%;
-    top: 280%;
-
-
 }
 
 .texto-encriptado {
-    position: relative;
     color: black;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 120%;
     text-align: center;
-    top: 10%;
-    margin-top: 4%;
-    margin-bottom: 0;
     border-color: #ffffff;
-
 
 }
 
 .ingrese-texto {
-    position: relative;
-    top: 10%;
-    display: flex;
+
+    display: flexbox;
     font-size: 1.3rem;
     text-align: center;
     color: #495057;
@@ -122,12 +115,7 @@ main{
 
 
 .textoResultado {
-    position: absolute;
-    width: 70%;
-    height: 73%;
-    left: 10%;
-    top: 3%;
-    right: 1%;
+
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
@@ -166,17 +154,22 @@ main{
     border-radius: 10px;
 }
 
+.botonCopiar{
+
+margin: 20px;
+
+
+}
 .Copiar {
 
-    position: absolute;
+
     background: #ffffff;
     border: 2px solid #0A3871;
     border-radius: 24px;
     font-size: 1rem;
     width: 336px;
     height: 67px;
-    top: 101%;
-    left: 73.5%;
+
 
 }
 
@@ -197,40 +190,25 @@ button:focus:before {
     transform: scale(0.9);
 }
 
-.circulo-exclamacion {
-
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    opacity: 0.5;
-    margin: 0;
-    left: 15.5%;
-    top: 95.7%;
-}
-
-.importante {
+.texto-importante{
+    display: flex;
+    margin-left: 120px;
     font-size: 20px;
     color: #495057;
     opacity: 0.8;
-    position: absolute;
-    left: 17%;
-    top: 93%;
+    margin-bottom: 20px;
+}
 
-
+svg{
+    margin-right: 6px;
 }
 
 .botones {
-
-    position: relative;
     display: flex;
     gap: 24px;
     width: 656px;
     height: 67px;
-    left: 15%;
-    top: 100%;
-    margin-top: 10px;
-    position: absolute;
-
+    margin-left: 120px;
 }
 
 .Encriptar {
@@ -246,10 +224,7 @@ button:focus:before {
 
 .Encriptar:before {
     transition: 0.5s all ease;
-    position: absolute;
     top: 0;
-    left: 50%;
-    right: 50%;
     bottom: 0;
     opacity: 0;
     content: '';
@@ -265,8 +240,6 @@ button:focus {
 .Encriptar:hover:before,
 button:focus:before {
     transition: 0.5s all ease;
-    left: 0;
-    right: 0;
     opacity: 1;
 }
 
@@ -287,10 +260,6 @@ button:focus:before {
 
 .Desencriptar:before {
     transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
     bottom: 0;
     opacity: 0;
     content: '';
@@ -306,8 +275,6 @@ button:focus {
 .Desencriptar:hover:before,
 button:focus:before {
     transition: 0.5s all ease;
-    left: 0;
-    right: 0;
     opacity: 1;
 }
 
@@ -318,180 +285,33 @@ button:focus:before {
 .pie-pagina {
 
     background-color: #0A3871;
-    position: relative;
-    padding-left: 0;
-    padding-top: 7px;
-    padding-right: 0;
-    top: 62rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem;
+    min-width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    display: flex;
+
+    
+
 
 }
 
-.texto-pie {
-
-    font-family: 'Poppins', sans-serif;
-    color: white;
+.texto-pie{
     text-align: center;
-    font-size: 1rem;
-
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .ocultar {
     display: none;
-}
-
-@media screen and (max-width: 375px) {
-
-    * {
-        margin: 0px;
-    }
-
-    .texto-a-encriptar {
-        height: 80%;
-        width: 80%;
-        margin: 0%;
-        left: 10%;
-        top: 20%;
-        position: absolute;
-    }
-
-
-    .dibujo-nene {
-        display: none
-    }
-
-    .cuadro-respuesta {
-        top: 150%;
-        left: 10%;
-        height: 30%;
-        width: 80%;
-        bottom: 10%;
-    }
-
-    .texto-encriptado {
-        margin: 1%;
-    }
-
-    .ingrese-texto {
-        margin-left: 5%;
-    }
-
-    .circulo-exclamacion {
-        left: 10%;
-        top: 109.8%;
-        width: 0.8rem;
-    }
-
-    .importante {
-        left: 15%;
-        top: 110%;
-        font-size: 0.8rem;
-    }
-
-    .botones {
-        left: 5%;
-    }
-
-    .Desencriptar {
-        position: absolute;
-        top: 130%;
-    }
-
-    .botonCopiar {
-        position: absolute;
-        width: 336px;
-        height: 67px;
-        top: 180%;
-    }
-
-    .pie-pagina {
-        position: absolute;
-        top: 260%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    * {
-        margin: 0px;
-    }
-
-    .texto-a-encriptar {
-        height: 40%;
-        width: 55%;
-        margin: 0%;
-        left: 5%;
-        top: 20%;
-    }
-
-
-    .dibujo-nene {
-        display: none
-    }
-
-    .cuadro-respuesta {
-        position: absolute;
-        top: 85%;
-        left: 5%;
-        right: 5%;
-        height: 30%;
-        width: 55%;
-        bottom: 10%;
-    }
-
-    .texto-encriptado {
-        margin: 1%;
-    }
-
-    .ingrese-texto {
-        margin-left: 5%;
-    }
-
-    .circulo-exclamacion {
-        left: 2%;
-        top: 67.9%;
-        width: 0.8rem;
-    }
-
-    .importante {
-        left: 4%;
-        top: 67.99%;
-        font-size: 0.8rem;
-    }
-
-.botones{
-    position: absolute;
-    gap: 10px;
-    left: 0.5%;
-    right: 0.5%;
-    display: flex;
-    top: 70%;
-}
-.Encriptar{
-    height: 100%;
-    width: 35%;
-    
-    
-}
-.Desencriptar{
-    height: 100%;
-    width: 35%;
-}
-    .Copiar {
-        position: absolute;
-        width: 336px;
-        height: 67px;
-        top: 105%;
-        left: 10%;
-    }
-
-    .pie-pagina {
-        position: absolute;
-        top: 120%;
-        width: 70%;
-    }
-
-    .contenedorResultado{
-        display: flexbox;
-
-    }
 }
