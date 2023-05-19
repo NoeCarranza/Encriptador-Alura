@@ -18,9 +18,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 5fr 1fr;
-    margin: 25 25 25 0;
+    margin: 25 25 25 25;
 }
 
+.logoalura{
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+}
 .logo-alura {
 
     align-items: flex-start;
@@ -35,9 +42,8 @@ main {
 }
 
 .texto-a-encriptar {
-    height: 80%;
+    height: 750px;
     width: 80%;
-    margin-left: 150px;
     margin-top: 120px;
     background-color: #E5E5E5;
     font-family: 'Inter', sans-serif;
@@ -45,6 +51,7 @@ main {
     color: #0a3871;
     resize: none;
     border-color: #E5E5E5;
+    display: block;
 }
 
 .texto-a-encriptar::-webkit-scrollbar {
@@ -76,14 +83,15 @@ main {
 
 .cuadro-respuesta {
 
-    display: block;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin: 40px;
-    height: 110%;
+    height: 100%;
     width: 80%;
     border-color: #FFFFFF;
+    box-sizing:border-box;
+    max-width: 500px;
 
 
 }
@@ -93,8 +101,9 @@ main {
     border-radius: 32px;
     margin-left: 2px;
     margin-top: 15px;
-    height: auto;
-    width: auto;
+    width: 100%;
+    max-height: 300px;
+    width: 70%;
 }
 
 .dibujo-nene {
@@ -145,8 +154,11 @@ main {
     overflow: auto;
     border-color: #0A3871;
     color: #495057;
-    height: 107%;
+    box-sizing:border-box;
+    height: 80%;
     width: 80%;
+    max-width: 500px;
+    max-height: 955px;
 }
 
 .textoResultado::-webkit-scrollbar {
@@ -184,9 +196,10 @@ main {
 
 .botonCopiar {
 
-    margin: 20px;
-    display: flex;
-
+    display: block;
+    margin: auto;
+    width: 377px;
+    height: 60px;
 
 }
 
@@ -199,6 +212,7 @@ main {
     font-size: 1rem;
     width: 336px;
     height: 67px;
+    display: block;
 
 
 }
@@ -221,12 +235,12 @@ button:focus:before {
 }
 
 .texto-importante {
-    display: inline-flex;
+    display: flex;
     align-items: start;
     font-size: 20px;
     color: #495057;
     opacity: 0.8;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 svg {
@@ -235,11 +249,9 @@ svg {
 
 .botones {
     display: flex;
+    align-items: start;
     gap: 24px;
-    width: 656px;
-    height: 67px;
-    margin-left: 120px;
-    justify-content: center;
+    margin: auto;
 }
 
 .Encriptar {
