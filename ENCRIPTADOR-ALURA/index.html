@@ -17,60 +17,50 @@
 
 <body>
 
-    <header>
-
-        <head>
-            <img src="assets/Logo.png" class="logo-alura">
-        </head>
-
-    </header>
 
     <main>
 
-        <section class="texto">
-            <textarea class="texto-a-encriptar" id="textoAEncriptar" placeholder="Ingrese su texto aquí"></textarea>
+        <section class="logoalura">
+            <img src="assets/Logo.png" class="logo-alura">
         </section>
 
-        <section class="cuadro-respuesta">
-            <div class="dibujo-nene">
-                <img src="assets/Muñeco.png" id="imagendibujo">
+        <section class="texto-a-encriptar">
+            <div>
+            <textarea class="texto-a-encriptar" id="textoAEncriptar" placeholder="Ingrese su texto aquí"></textarea>
             </div>
-            <div class="texto-encriptado">
-                <p>Ningún mensaje fue encontrado</p> 
-            </div>
-            <div class="ingrese-texto">
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-            <div class="contenedorResultado" id="contenedorResultado">
-                <p class="textoResultado"></p>
-            </div>
-        </section>
-        <section class="boton-copiar">
-            <div class="botonCopiar ocultar">
-            <button class="Copiar" id="boton-copiar" onclick="copiar()">Copiar </button>
-            </div>
-        </section>
-        
-        
-        <section>
             <div class="texto-importante">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><g transform="translate(16 0) scale(-1 1)"><path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <g transform="translate(16 0) scale(-1 1)">
+                        <path fill="currentColor"
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" />
+                    </g>
+                </svg>
                 <p class="importante"> Solo letras minúsculas y sin acentos</p>
             </div>
-
+            <div class="botones">
+                <input type="button" class="Encriptar" value="Encriptar"></input>
+                <input type="button" class="Desencriptar" value="Desencriptar"></input>
+            </div>
         </section>
-
-        <section class="botones">
-
-            <input type="button" class="Encriptar" value="Encriptar"></input>
-            <input type="button" class="Desencriptar" value="Desencriptar"></input>
-
-        </section>
-
-
+        <section class="cuadro-respuesta">
+            <div class="contenedorResultado" id="contenedorResultado">
+                <div class="dibujo-nene">
+                    <img src="assets/Muñeco.png" id="imagendibujo">
+                </div>
+                <div class="texto-encriptado">
+                    <p>Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="ingrese-texto">
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <p class="textoResultado"></p>
+                <div class="botonCopiar ocultar">
+                    <button class="Copiar" id="boton-copiar" onclick="copiar()">Copiar </button>
+                </div>
+            </div>
 
     </main>
-    
+
 
     <footer class="pie-pagina">
         <div class="texto-pie">
