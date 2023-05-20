@@ -19,29 +19,25 @@ function ocultar() {
     ingreseTexto.classList.add("ocultar");
 }
 
-function encriptar() 
-{
+function encriptar() {
     ocultar();
     var textoaencriptar = recuperartexto();
     resultado.textContent = encriptarTexto(textoaencriptar);
     botonCopiar.classList.remove("ocultar");
 }
 
-function desencriptar() 
-{
+function desencriptar() {
     ocultar();
     var textoadencriptar = recuperartexto()
     resultado.textContent = desencriptarTexto(textoadencriptar);
 }
 
-function recuperartexto() 
-{
+function recuperartexto() {
     var textoaencriptar = document.querySelector(".texto-a-encriptar");
     return textoaencriptar.value;
 }
 
-function encriptarTexto(textofinal) 
-{
+function encriptarTexto(textofinal) {
     var texto = textofinal;
     var textofinal = "";
     for (var i = 0; i < texto.length; i++) {
@@ -68,30 +64,29 @@ function encriptarTexto(textofinal)
     return textofinal;
 }
 
-function desencriptarTexto(textofinal) 
-{
+function desencriptarTexto(textofinal) {
     var texto = textofinal;
     var textofinal = "";
     for (var i = 0; i < texto.length; i++) {
         if (texto[i] == "e") {
             textofinal = textofinal + "e"
-            i = i +4;
+            i = i + 4;
         }
         else if (texto[i] == "a") {
             textofinal = textofinal + "a"
-            i = i +1;
+            i = i + 1;
         }
         else if (texto[i] == "i") {
             textofinal = textofinal + "i"
-            i = i +3;
+            i = i + 3;
         }
         else if (texto[i] == "o") {
             textofinal = textofinal + "o"
-            i = i +3;
+            i = i + 3;
         }
         else if (texto[i] == "u") {
             textofinal = textofinal + "u"
-            i = i +3;
+            i = i + 3;
         }
         else {
             textofinal = textofinal + texto[i]
@@ -101,3 +96,15 @@ function desencriptarTexto(textofinal)
     return textofinal;
 }
 
+
+    function copiar() {
+    var contenedorTexto = document.querySelector('.textoResultado');
+    var tempInput = document.createElement('textarea');
+    tempInput.value = contenedorTexto.innerText;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('¡Texto copiado!');
+}
