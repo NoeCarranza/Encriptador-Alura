@@ -136,18 +136,22 @@ main {
 
 }
 
+.texto-resultado{
+    height: 100%;
+    max-width: 90%;
+    max-height: 90vh;
+}
 
 .textoResultado {
     display: block;
     font-size: 2rem;
     margin: 20px 0 0 50px;
     overflow-wrap: break-word;
-    overflow: hidden;
     overflow: auto;
     border-color: #0A3871;
     color: #495057;
     box-sizing: border-box;
-    height: 80%;
+    height: 100vh;
     width: 60%;
 }
 
@@ -178,11 +182,6 @@ main {
     border-radius: 10px;
 }
 
-
-.texto-resultado{
-    height: 100%;
-    max-width: 90%;
-}
 
 .botonCopiar {
 
