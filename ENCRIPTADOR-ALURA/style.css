@@ -396,26 +396,32 @@ button:focus:before {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     main {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0;
     }
     .logo-alura{
-        left: 0;
+        width: 32px;
+        height: 48px;
+        left: 16px;
         top: 24px;
     }
     .texto-a-encriptar {
+        max-width: 80%;
         margin-left: 16px;
-        margin-top: 160px;
-        max-width: 90%;
-        width: 340px;
+        margin-right: 16px;
+        margin-top: 152px;
+        width: 87%;
+        max-width: 343px;
+        max-height: 624px;
     }
 
     .cuadro-respuesta {
-        max-width: 100%;
-        width: 688px;
+        max-width: 327px;
+        width: 85%;
+        margin: 64px 24px 40px 24px;
 
     }
 
@@ -434,7 +440,8 @@ button:focus:before {
 
     .texto-importante {
         align-items: start;
-        margin: 0 0 16px 0;
+        margin: 16px;
+        font-size: 14px;
     }
 
     .botones {
@@ -444,6 +451,7 @@ button:focus:before {
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
+        margin: 16px;
     }
 
     .textoResultado {
@@ -451,7 +459,11 @@ button:focus:before {
         margin-top: 10px;
 
     }
-
+  svg{
+        width: 15px;
+        height: 15px;
+        display: flex;
+    }
     .botonCopiar {
         margin-top: 20px;
     }
