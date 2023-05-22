@@ -140,7 +140,7 @@ main {
 
 }
 
-.texto-resultado{
+.texto-resultado {
     height: 100%;
     max-width: 90%;
     max-height: 90vh;
@@ -344,14 +344,21 @@ button:focus:before {
     main {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 0;
 
     }
-    .texto-a-encriptar{
-        margin-left: 60px;
+
+    .texto-a-encriptar {
+        margin-left: 35px;
+        margin-top: 200px;
     }
-    .cuadro-respuesta{
+
+    .cuadro-respuesta {
         max-width: 100%;
+        width: 688px;
+
     }
+
     .dibujo-nene {
         display: none;
     }
@@ -366,8 +373,8 @@ button:focus:before {
     }
 
     .texto-importante {
-        align-items: center;
-        margin-left: 55px;
+        align-items: start;
+        margin: 0 0 16px 0;
     }
 
     .botones {
@@ -375,16 +382,81 @@ button:focus:before {
     }
 
     .textoResultado {
-            max-width: 100%;
-            margin-top: 10px;
+        max-width: 100%;
+        margin-top: 10px;
 
     }
 
     .botonCopiar {
-        display: flex;
         margin-top: 20px;
     }
-    .pie-pagina{
+
+    .pie-pagina {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
     }
+    .logo-alura{
+        left: 0;
+        top: 24px;
+    }
+    .texto-a-encriptar {
+        margin-left: 16px;
+        margin-top: 160px;
+        max-width: 90%;
+        width: 340px;
+    }
+
+    .cuadro-respuesta {
+        max-width: 100%;
+        width: 688px;
+
+    }
+
+    .dibujo-nene {
+        display: none;
+    }
+
+    .texto-resultado {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+    }
+
+    .texto-importante {
+        align-items: start;
+        margin: 0 0 16px 0;
+    }
+
+    .botones {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+    }
+
+    .textoResultado {
+        max-width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .botonCopiar {
+        margin-top: 20px;
+    }
+
+    .pie-pagina {
+        width: 100%;
+    }
+}
