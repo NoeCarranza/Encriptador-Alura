@@ -402,14 +402,15 @@ button:focus:before {
         grid-template-columns: 1fr;
         margin: 0;
     }
-    .logo-alura{
+
+    .logo-alura {
         width: 32px;
         height: 48px;
         left: 16px;
         top: 24px;
     }
+
     .texto-a-encriptar {
-        max-width: 80%;
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 152px;
@@ -420,13 +421,33 @@ button:focus:before {
 
     .cuadro-respuesta {
         max-width: 327px;
-        width: 85%;
+        width: 100%;
+        margin: 0%;
         margin: 64px 24px 40px 24px;
 
+
+    }
+
+    .contenedorResultado {
+        max-width: 327px;
+    }
+
+    .ingrese-texto {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
     }
 
     .dibujo-nene {
         display: none;
+    }
+
+    .texto-encriptado {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
     }
 
     .texto-resultado {
@@ -459,11 +480,13 @@ button:focus:before {
         margin-top: 10px;
 
     }
-svg{
+
+    svg {
         width: 15px;
         height: 15px;
         display: flex;
     }
+
     .botonCopiar {
         margin-top: 20px;
     }
