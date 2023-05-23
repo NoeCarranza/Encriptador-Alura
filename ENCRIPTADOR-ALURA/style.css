@@ -459,7 +459,7 @@ button:focus:before {
         margin-top: 10px;
 
     }
-  svg{
+svg{
         width: 15px;
         height: 15px;
         display: flex;
