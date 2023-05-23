@@ -1,17 +1,15 @@
 body {
-    background: #E5E5E5;
-    Padding: 0;
-    font-family: 'Inter', sans-serif;
+    background: #e5e5e5;
+    padding: 0;
+    font-family: "Inter", sans-serif;
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
     margin: 0;
-
 }
 
 p {
     margin: 0;
-
 }
 
 main {
@@ -32,7 +30,6 @@ main {
 }
 
 .logo-alura {
-
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
@@ -41,19 +38,18 @@ main {
     height: 3rem;
     left: 2.5rem;
     top: 2.5rem;
-
 }
 
 .texto-a-encriptar {
     height: 750px;
     width: 80%;
     margin-top: 120px;
-    background-color: #E5E5E5;
-    font-family: 'Inter', sans-serif;
+    background-color: #e5e5e5;
+    font-family: "Inter", sans-serif;
     font-size: 2rem;
     color: #0a3871;
     resize: none;
-    border-color: #E5E5E5;
+    border-color: #e5e5e5;
     display: block;
 }
 
@@ -87,16 +83,15 @@ main {
 .cuadro-respuesta {
     display: grid;
     justify-items: center;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin: 40px;
     height: 100%;
     width: 80%;
     max-width: 400px;
-    border-color: #FFFFFF;
+    border-color: #ffffff;
     box-sizing: border-box;
-
 }
 
 .contenedorResultado {
@@ -128,16 +123,14 @@ main {
 }
 
 .ingrese-texto {
-
     display: flex;
     font-size: 1.3rem;
     text-align: center;
     color: #495057;
-    border-color: #FFFFFF;
+    border-color: #ffffff;
     width: 90%;
     border-style: none;
     margin-left: 1rem;
-
 }
 
 .texto-resultado {
@@ -152,7 +145,7 @@ main {
     margin: 20px 0 0 50px;
     overflow-wrap: break-word;
     overflow: auto;
-    border-color: #0A3871;
+    border-color: #0a3871;
     color: #495057;
     box-sizing: border-box;
     max-height: 90%;
@@ -186,24 +179,19 @@ main {
     border-radius: 10px;
 }
 
-
 .botonCopiar {
     display: flex;
     margin-top: 10px;
 }
 
 .Copiar {
-
-
     background: #ffffff;
-    border: 2px solid #0A3871;
+    border: 2px solid #0a3871;
     border-radius: 24px;
     font-size: 1rem;
     width: 336px;
     height: 67px;
     display: flexbox;
-
-
 }
 
 .Copiar:hover,
@@ -244,14 +232,12 @@ svg {
 }
 
 .Encriptar {
-
     width: 328px;
     height: 67px;
-    background: #0A3871;
+    background: #0a3871;
     border-radius: 24px;
     color: rgba(243, 245, 252, 1);
     font-size: 15px;
-
 }
 
 .Encriptar:before {
@@ -259,7 +245,7 @@ svg {
     top: 0;
     bottom: 0;
     opacity: 0;
-    content: '';
+    content: "";
     border-radius: 24px;
     z-index: -1;
 }
@@ -279,13 +265,11 @@ button:focus:before {
     transform: scale(0.9);
 }
 
-
 .Desencriptar {
-
     width: 328px;
     height: 67px;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
     border-radius: 24px;
     font-size: 15px;
 }
@@ -294,7 +278,7 @@ button:focus:before {
     transition: 0.5s all ease;
     bottom: 0;
     opacity: 0;
-    content: '';
+    content: "";
     border-radius: 24px;
     z-index: -1;
 }
@@ -315,9 +299,8 @@ button:focus:before {
 }
 
 .pie-pagina {
-
-    background-color: #0A3871;
-    font-family: 'Poppins', sans-serif;
+    background-color: #0a3871;
+    font-family: "Poppins", sans-serif;
     color: white;
     font-size: 1rem;
     min-width: 100%;
@@ -345,7 +328,6 @@ button:focus:before {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0;
-
     }
 
     .texto-a-encriptar {
@@ -356,7 +338,6 @@ button:focus:before {
     .cuadro-respuesta {
         max-width: 100%;
         width: 688px;
-
     }
 
     .dibujo-nene {
@@ -384,7 +365,6 @@ button:focus:before {
     .textoResultado {
         max-width: 100%;
         margin-top: 10px;
-
     }
 
     .botonCopiar {
@@ -396,33 +376,35 @@ button:focus:before {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     main {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0;
+        max-width: 90%;
     }
-    .logo-alura{
+
+    .logo-alura {
         width: 32px;
         height: 48px;
         left: 16px;
         top: 24px;
     }
     .texto-a-encriptar {
-        max-width: 80%;
-        margin-left: 16px;
-        margin-right: 16px;
-        margin-top: 152px;
-        width: 87%;
-        max-width: 343px;
+        /* max-width: 80%; */
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 8rem;
+        /* width: 87%; */
+        /* max-width: 343px; */
+        height: 200px;
         max-height: 624px;
     }
 
     .cuadro-respuesta {
-        max-width: 327px;
+        max-width: 100vh;
         width: 85%;
         margin: 64px 24px 40px 24px;
-
     }
 
     .dibujo-nene {
@@ -442,24 +424,35 @@ button:focus:before {
         align-items: start;
         margin: 16px;
         font-size: 14px;
+        max-width: 320px;
     }
 
     .botones {
-        justify-content: center;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 0px;
         gap: 24px;
         margin: 16px;
+        max-width: 100vh;
+        width: 90%;
+    }
+
+    input.Encriptar,
+    input.Desencriptar {
+        width: 99%;
+    }
+
+    button {
+        width: 100vh;
     }
 
     .textoResultado {
         max-width: 100%;
         margin-top: 10px;
-
     }
-  svg{
+    svg {
         width: 15px;
         height: 15px;
         display: flex;
@@ -469,6 +462,6 @@ button:focus:before {
     }
 
     .pie-pagina {
-        width: 100%;
+        width: 80%;
     }
 }
